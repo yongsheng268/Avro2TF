@@ -2,10 +2,12 @@ language: scala
 git:
   depth: 3
 jdk:
-  - oraclejdk11
+  - oraclejdk8
 script: "./gradlew check --stacktrace --info"
 
 # safelist
 branches:
   only:
   - master
+
+dist: trusty
